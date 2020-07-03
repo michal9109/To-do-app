@@ -1,0 +1,82 @@
+@media screen and (max-width: 600px) {
+  .addTask {
+    display: grid;
+    grid-template-areas:
+      "input input"
+      "checkbox priority"
+      "labeld data"
+      "button button";
+    &__input-task {
+      grid-area: input;
+      margin: 0;
+    }
+    &__checkbox {
+      grid-area: checkbox;
+      margin-left: auto;
+    }
+    &__label-priority {
+      grid-area: priority;
+      margin: 0;
+    }
+    &__label-data {
+      grid-area: labled;
+    }
+    &__date {
+      grid-area: data;
+      margin: 0;
+    }
+    &__btn {
+      grid-area: button;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .active-task__box {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "";
+    font-size: 20px;
+
+    .active-task__btn-delete {
+      margin-bottom: 10px;
+    }
+
+    .active-task__conte {
+      display: grid;
+      grid-template-areas:
+        "title title"
+        "doto date";
+    }
+    .active-task__name {
+      grid-area: title;
+      text-align: center;
+    }
+    .active-task__text {
+      grid-area: doto;
+    }
+    .active-task__date {
+      grid-area: date;
+    }
+  }
+  .done {
+    &__box-d {
+      font-size: 20px;
+      margin: 0;
+      display: grid;
+      text-align: center;
+    }
+    &__box-d-conte1 {
+      display: grid;
+    }
+    &__name-d {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    &__box-d-conte2 {
+      display: grid;
+    }
+  }
+}

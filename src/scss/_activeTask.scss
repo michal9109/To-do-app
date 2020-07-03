@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+.active-task {
+  font-family: "Pangolin", cursive;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: rgba(49, 48, 48, 0.842);
+  color: #fff;
+
+  &__title {
+    font-size: 2.5rem;
+    padding: 15px;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.842);
+  }
+  &__no-task {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 0.3rem;
+    width: 80%;
+    margin-right: 1.5rem;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.842);
+  }
+  &__box:nth-last-child(1) {
+    border-bottom: none;
+  }
+  &__conte {
+    flex-basis: 60%;
+  }
+  &__name {
+    flex-basis: 20%;
+  }
+  &__text {
+    flex-basis: 10%;
+  }
+  &__date {
+    flex-basis: 15%;
+  }
+  &__btn-done {
+    font-family: "Pangolin", cursive;
+    flex-basis: 15%;
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    background-color: #89c403;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+  }
+  &__btn-done:hover {
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    background-color: #ce0100;
+  }
+  &__btn-delete {
+    flex-basis: 5%;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #fe1a00;
+    border-radius: 6px;
+    border: 1px solid #d83526;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+  }
+  &__btn-delete:hover {
+    background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+    background-color: #ce0100;
+  }
+  &__btn-delete:active {
+    position: relative;
+    top: 1px;
+  }
+}
